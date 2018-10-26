@@ -8,4 +8,8 @@ class Appointment
     @doctor = doctor
     @date = date
   end
+
+  def self.all
+    @@all
+  end
 end
