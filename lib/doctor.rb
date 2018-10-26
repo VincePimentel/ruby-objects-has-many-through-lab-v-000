@@ -17,14 +17,10 @@ class Doctor
   end
 
   def appointments
-    Appointment.all.select do |apt|
-      apt.doctor == self
-    end
+    Appointment.all.select { |apt| apt.doctor == self }
   end
 
   def patients
-    appointments.map do |apt|
-      apt.patient
-    end
+    appointments.map { |apt| apt.patient }
   end
 end
