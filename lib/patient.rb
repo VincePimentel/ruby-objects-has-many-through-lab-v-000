@@ -23,6 +23,8 @@ class Patient
   end
 
   def doctors
-
+    appointments.collect do |apt|
+      apt.doctor
+    end
   end
 end
