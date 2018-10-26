@@ -1,9 +1,11 @@
 class Appointment
-  attr_accessor :name
+  attr_accessor :date
 
   @@all = Array.new
 
-  def initialize(name)
-    @name = name
+  def initialize(patient, doctor, date)
+    @patient = patient
+    @doctor = doctor
+    @date = date
   end
 end
